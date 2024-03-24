@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 //  Import FILES
+import '../../../config/helpers/random_generator.dart';
 import '../../providers/state_providers.dart';
 //  PARTS
 //  PROVIDERS
@@ -67,7 +68,9 @@ class StateProviderScreen extends ConsumerWidget {
         label: const Text('Nombre aleatorio'),
         icon: const Icon(Icons.refresh_rounded),
         onPressed: () {
-          ref.read(usernameProvider.notifier);
+          ref
+              .read(usernameProvider.notifier)
+              .changeName(RandomGenerator.getRandomName());
         },
       ),
     );

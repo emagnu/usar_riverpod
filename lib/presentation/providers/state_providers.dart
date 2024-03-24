@@ -31,6 +31,7 @@ class Counter extends _$Counter {
 //  --- Switch dark/light mode
 // DarkMode -> boolean default: false
 @riverpod
+// @Riverpod(keepAlive: true)
 class DarkMode extends _$DarkMode {
   @override
   bool build() {
@@ -47,6 +48,7 @@ class DarkMode extends _$DarkMode {
 //  Default: Bibi Fish
 //  username -> String default: 'Bibi Fish'
 //  ChangeName(String name)
+//  ref.read(usernameProvider.notifier).changeName(RandomGenerator.getRandomName())
 @riverpod
 class Username extends _$Username {
   @override
