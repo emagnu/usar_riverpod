@@ -1,5 +1,11 @@
+//  //   ///
+//  Import LIBRARIES
 import 'package:flutter/material.dart';
 
+//  Import FILES
+//  PARTS
+//  PROVIDERS
+//  //  ///
 
 class RouterScreen extends StatelessWidget {
   const RouterScreen({super.key});
@@ -11,7 +17,7 @@ class RouterScreen extends StatelessWidget {
         title: const Text('Provider + Go Router'),
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Icon( Icons.arrow_back_ios_new_rounded ),
+        child: const Icon(Icons.arrow_back_ios_new_rounded),
         onPressed: () {},
       ),
     );

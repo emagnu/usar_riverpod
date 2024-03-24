@@ -1,5 +1,10 @@
+//  //   ///
+//  Import LIBRARIES
 import 'package:flutter/material.dart';
-
+//  Import FILES
+//  PARTS
+//  PROVIDERS
+//  //  ///
 
 class ProviderScreen extends StatelessWidget {
   const ProviderScreen({super.key});
@@ -11,7 +16,7 @@ class ProviderScreen extends StatelessWidget {
         title: const Text('Provider'),
       ),
       body: const Center(
-        child: Text('Fernando Herrera'),
+        child: Text('Manny Emagnu'),
       ),
     );
   }

@@ -1,14 +1,15 @@
 //  //   ///
-//  Iimport LIBRARIES
+//  Import LIBRARIES
 import 'package:flutter/material.dart';
-//  Iimport FILES
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+//  Import FILES
 import 'config/router/app_router.dart';
 import 'config/theme/app_theme.dart';
 //  PARTS
 //  PROVIDERS
 //  //  ///
 
-void main() => runApp(const MyApp());
+void main() => runApp(const ProviderScope(child: MyApp()));
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,3 +24,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+//  //   ///
+//  Import LIBRARIES
+//  Import FILES
+//  PARTS
+//  PROVIDERS
+//  //  ///
